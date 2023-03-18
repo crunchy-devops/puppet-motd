@@ -5,4 +5,9 @@
 # @example
 #   include motd::exercice1
 class motd::exercice1 {
+  file { '/tmp/hello':
+    ensure => file,
+    content => 'Hello World',
+    path => '/tmp/hello',
+  }
 }
