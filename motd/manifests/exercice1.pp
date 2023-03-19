@@ -7,7 +7,7 @@
 class motd::exercice1 {
   file { '/tmp/hello':
     ensure => file,
-    content => 'Hello World',
+    content => 'Hello World New',
     path => '/tmp/hello',
   }
 }
