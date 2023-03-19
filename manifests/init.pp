@@ -1,6 +1,6 @@
 node default {
   notify { 'before': }
-  class { "puppet-motd::motd":
+  class { 'motd::motd':
     content => "Hello world\n",
   }
   notify { 'after': }
