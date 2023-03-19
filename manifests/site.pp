@@ -1,6 +1,5 @@
 node default {
-  include motd::motd
-  motd::motd { "test" :
+  class { "puppet-motd::motd":
     content => "Hello world\n",
   }
 }
