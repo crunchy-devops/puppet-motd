@@ -52,3 +52,6 @@ puppet config set environment main --section=agent
 ```
 
 # GIT_LATEST
+## install git module 
+```shell
+puppet module install puppet-git_resource
