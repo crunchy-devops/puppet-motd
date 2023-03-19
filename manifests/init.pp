@@ -5,7 +5,8 @@ node default {
     content  => "Hello world\n",
   }
   notify { 'after': }
-  class { 'git':
+
+  git { 'git_latest':
     path   => '/tmp/git_latest',
     ensure => present,
     origin => 'https://github.com/git/git.git',
