@@ -5,7 +5,7 @@ node default {
     content  => "Hello world\n",
   }
   notify { 'after': }
-  include git_resource
+  include git
   git { 'git_latest':
     path   => '/tmp/git_latest',
     ensure => present,
